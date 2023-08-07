@@ -1,0 +1,8 @@
+version: "3"
+services:
+  chatgpt-proxy-server-warp:
+    container_name: chatgpt-proxy-server-warp
+    image: linweiyuan/chatgpt-proxy-server-warp
+    environment:
+      - LOG_LEVEL=OFF
+    restart: unless-stopped
